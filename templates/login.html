@@ -1,0 +1,33 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login as a Leafnow user</title>
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <link rel="icon" href="{%static 'images/fav.jpg' %}">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="div12">
+        <img class="eleven" src="{%static 'images/eleven.jpg' %}" alt="">
+      </div>
+    <div class="div34">
+      <form method="post">
+        <h1 class="hf">Login or Signup</h1>
+        <div class="div14">
+          <label for="">USERNAME</label>
+          {% csrf_token %}
+          <input type="text" class="form-control" name="username" value="">
+        </div>
+        <div class="div15">
+          <label for="">Password</label>
+          <input type="password" class="form-control" name="password" value="">
+        </div>
+        <input type="submit" name="" value="Login" class="btn"></a>
+        <p class="p20">Not a member?<a class="frgt" href="/signup">Signup now</a></p>
+      </form>
+    </div>
+  </body>
+</html>

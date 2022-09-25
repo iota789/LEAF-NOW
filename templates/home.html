@@ -1,0 +1,38 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leaf Now | One platform to sell, buy and donate plants</title>
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <link rel="icon" href="{%static 'images/fav.jpg' %}">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body class="bo">
+    <div class="div1">
+      <img class="two" src="{%static 'images/two.jpg' %}" alt="">
+      <div class="div2">
+        <nav>
+          <ul class="ul">
+            <li><a href="{%url 'logout1' %}">Logout</a></li>
+            <li class="li"><a href="/buy">Buy</a></li>
+            <li><a href="/sell">Sell</a></li>
+            <li><a href="/donate">Donate</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/cart" class="bull"><img class="csrt" src="{%static 'images/cart.jpg' %}" width="40px" height="40px" alt=""></a></li>
+            <li><a href="{%url 'logout1' %}">LOGOUT</a></li>
+          </ul>
+        </nav>
+        <div class="div45">
+          <a class="leafnow" href="{%url 'home' %}"><img src="{%static 'images/le.jpg' %}" alt="logo" style="height:50px"></a>
+        </div>
+      </div>
+        <div class="div3">
+          <h1 class="abstract1">There's magic in growing with plants.</h1>
+          <p class="abstract">We are here to inspire a world where every plant journey is a personal revolution of inner change and growth.</p>
+        </div>
+       </div>
+    </div>
+  </body>
+</html>

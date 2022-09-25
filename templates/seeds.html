@@ -1,0 +1,78 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leaf Now | One platform to sell, buy and donate plants</title>
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <link rel="icon" href="{%static 'images/fav.jpg' %}">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+      <ul class="ul">
+        <li><a href="{%url 'logout1' %}">Logout</a></li>
+        <li class="li"><a href="/buy">Buy</a></li>
+        <li><a href="/sell">Sell</a></li>
+        <li><a href="/donate">Donate</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/cart" class="bull"><img class="csrt" src="{%static 'images/cart.jpg' %}" width="40px" height="40px" alt=""></a></li>
+      </ul>
+    </nav>
+    <div class="div45">
+      <a class="leafnow" href="{%url 'home' %}"><img src="{%static 'images/le.jpg' %}" alt="logo" style="height:50px"></a>
+    </div>
+      <div class="div19">
+        <img  class="fifteen" src="{%static 'images/broccli.jpg' %}" alt="">
+        <p>Broccli Seeds</p>
+        <p>250.00 Rupees</p>
+        <input type="submit" onclick="addtocart(div19)" class="cart" name="" value="Add to cart">
+      </div>
+      <div class="div20">
+        <img  class="fifteen" src="{%static 'images/cabbage.jpg'%}" alt="">
+        <p>Cabbage Seeds</p>
+        <p>150.00 Rupees</p>
+        <input type="submit" class="cart" name="" value="Add to cart">
+      </div>
+      <div class="div21">
+        <img  class="fifteen" src="{%static 'images/beetroot.jpg' %}" alt="">
+        <p>Beetroot Seeds</p>
+        <p>200.00 Rupees</p>
+        <input type="submit" class="cart" name="" value="Add to cart">
+      </div>
+      <div class="div22">
+        <img  class="fifteen"src="{%static 'images/bittergourd.jpg'%}" alt="">
+        <p>Bittergourd Seeds</p>
+        <p>150.00 Rupees</p>
+        <input type="submit" class="cart" name="" value="Add to cart">
+      </div>
+      <div class="div23">
+        <img  class="fifteen"src="{%static 'images/tomato.jpg' %}" alt="">
+        <p>Tomato Seeds</p>
+        <p>100.00 Rupees</p>
+        <input type="submit" class="cart" name="" value="Add to cart">
+      </div>
+      <div class="div24">
+        <img  class="fifteen"src="{%static 'images/capsicum.jpg' %}" alt="">
+        <p>Capsicum Seeds</p>
+        <p>150.00 Rupees</p>
+        <input type="submit" class="cart" name="" value="Add to cart">
+      </div>
+      <div class="div25">
+        <img  class="fifteen"src="{%static 'images/apple.jpg' %}" alt="">
+        <p>Apple Seeds</p>
+        <p>300.00 Rupees</p>
+        <input type="submit" class="cart" name="" value="Add to cart">
+      </div>
+      <div class="div26">
+        <img  class="fifteen"src="{%static 'images/pomegranate.jpg' %}" alt="">
+        <p>Pomegranate Seeds</p>
+        <p>250.00 Rupees</p>
+        <input type="submit" class="cart" name="" value="Add to cart">
+     <div class="car" id="car">
+          <div class="title"> cart</div><hr/>
+          <div id="title"></div>s
+      </div>   
+  </body>
+</html>

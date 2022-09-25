@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leaf Now | One platform to sell, buy and donate plants</title>
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <link rel="icon" href="{%static 'images/fav.jpg' %}">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+      <ul class="ul">
+        <li><a href="{%url 'logout1' %}">Logout</a></li>
+        <li class="li"><a href="/buy">Buy</a></li>
+        <li><a href="/sell">Sell</a></li>
+        <li><a href="/donate">Donate</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/cart" class="bull"><img class="csrt" src="{%static 'images/cart.jpg' %}" width="40px" height="40px" alt=""></a></li>
+      </ul>
+    </nav>
+    <div class="div45">
+      <a class="leafnow" href="{%url 'home' %}"><img src="{%static 'images/le.jpg' %}" alt="logo" style="height:50px"></a>
+    </div>
+    <div class="div6">
+      <img class="seven"src="{%static 'images/seven.jpg' %}" alt="" />
+      <img class="eight"src="{%static 'images/eight.jpg' %}" alt="" />
+      <div class="div7">
+        <h1 class="p4">Plant Donation Info: Giving Away Plants To Others</h1>
+        <p class="p5">Do you have plants that for one reason or another you don’t want? Did you know you could donate plants to charity? Giving away plants to charity is a kind of garden donation that those of us with a surplus can and should do.</p>
+        <p class="p5">There are many reasons for unwanted plants. Perhaps the plant has become too large or you need to divide a plant to keep it healthy, and now you have more of the species than you need. Or maybe you just simply don’t want the plant anymore.</p>
+        <p class="p5">The perfect solution is donating unwanted plants.</p>
+        <a class="nevermind" href="{%url 'fm2' %}">Start donating</a>
+        <div class="div8">
+          <p class="p5">The plants donatesawed by you will be welcomed by institutions such as a local churches, schools, or community centers.</p>
+        </div>
+    </div>
+  </body>
+</html>

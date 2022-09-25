@@ -1,0 +1,74 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leaf Now | One platform to sell, buy and donate plants</title>
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <link rel="icon" href="{%static 'images/fav.jpg' %}">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+      <ul class="ul">
+        <li><a href="{%url 'logout1' %}">Logout</a></li>
+        <li class="li"><a href="/buy">Buy</a></li>
+        <li><a href="/sell">Sell</a></li>
+        <li><a href="/donate">Donate</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/cart" class="bull"><img class="csrt" src="{%static 'images/cart.jpg' %}" width="40px" height="40px" alt=""></a></li>
+      </ul>
+    </nav>
+    <div class="div45">
+      <a class="leafnow" href="{%url 'home' %}"><img src="{%static 'images/le.jpg' %}" alt="logo" style="height:50px"></a>
+    </div>
+    <div class="div12">
+      <img class="twenty" src="{%static '/images/twenty.jpg'%}" alt="">
+    </div>
+
+    <div class="div31">
+      <h1 class="hm">Register and start donating</h1>
+      <form method="post">
+        {% csrf_token %}
+        <div class="">
+          <label for="">First name</label>
+          {{form.first_name}}
+        </div>
+        <div class="">
+          <label for="">Last name</label>
+          {{form.last_name}}
+        </div>
+        <div class="">
+          <label for="">Email id</label>
+          {{form.email_id}}
+
+        </div>
+        <div class="">
+          <label for="">Phone number</label>
+          {{form.phone_no}}
+        </div>
+        <div class="">
+          <div class="div32">
+            <label for="">Address</label>
+            {{form.address}}
+          </div>
+          
+        </div>
+        <div class="">
+          <div class="div32">
+            <label for="">Plant and Seed details</label>
+            {{form.pdet}}
+          </div>
+         
+        </div>
+        <div class="">
+          <label for="">Payment method(UPI id)</label>
+          {{form.payment}}          
+        </div>
+        <input type="submit" class="btn reg" name="" value="Register">
+      </form>
+    </div>
+    {{form.errors}}
+  </body>
+</html>
